@@ -1,0 +1,12 @@
+body{
+    background-color: #DEE4E3;
+   
+}
+.nav a {
+    text-decoration: none;
+    color: black;
+}
+.nav {
+    list-style: none;
+    margin: 0;
+}
