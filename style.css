@@ -1,12 +1,30 @@
-body{
+body {
     background-color: #DEE4E3;
-   
+    width: 80%;
 }
-.nav a {
+
+.nav1 li a {
     text-decoration: none;
     color: black;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
 }
+.nav1 {
+    display: flex;
+    justify-content: space-between;
+  
+}
+li {
+    margin-left: 20px;
+}
+ul {
+    list-style-type:none ;
+}
+
 .nav {
     list-style: none;
     margin: 0;
+    display: flex;
+    justify-content: space-between;
 }
