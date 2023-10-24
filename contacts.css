@@ -1,0 +1,58 @@
+
+    body{
+        width: 100%;
+        background-color:#DEE4E3 ;
+        transform: scale(1);
+        transform-origin: center;
+        
+    }
+    .social-icons {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .social-icons a {
+            text-decoration: none;
+            color: #333; /* Change the color to your preference */
+            margin: 10px;
+            font-size: 24px;
+        }
+
+        .social-icons a:hover {
+            color: #007bff; 
+        }
+        .contact{
+            margin-top: 10%;
+        }
+        .address{
+            font-size: 48;
+            font-weight:400;
+        }
+        .follow{
+            font-size: 48;
+            font-weight: 400;
+            color: green;
+        }
+        .close-button{
+            margin-top: 5%;
+            margin-left: 65%;
+            text-decoration: none;
+            background-color: #DEE4E3;
+            border: 0px;
+            color: black;
+           font-size: 40px;
+           
+        }
+
+       .close-link:hover {
+             cursor: pointer;
+        }
+
+        
+        .button-link{
+            text-decoration: none;
+                    
+        }
+        
+
+        
