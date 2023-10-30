@@ -1,0 +1,86 @@
+body {
+    height: 1300px;
+    background-color: #e4e1de;
+}
+
+.grid-container {
+    background-color: #e4e1de;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 15%;
+
+   
+  
+}
+
+.grid-item {
+    flex: 0 0 0 calc(33.33% - 20px); 
+    margin-right: 20px; 
+    margin-bottom: 20px; 
+    background-color: white;
+    display: inline-block;
+    margin-top: 40px;
+
+  
+}
+
+.products-img {
+    width: 250px;
+    height: 300px;
+    margin-right: 15px;
+    background-color: white;
+}
+
+.icon-Products {
+    margin-top: 2%;
+    margin-left: 85%;
+}
+
+.product-paragraph {
+    margin-left: 20%;
+}
+
+.price-tag {
+    margin-left: 30%;
+    margin-top: -3%;
+    color: green;
+}
+.Back-icon{
+    display: flex;
+    margin-bottom: 40px;
+    margin-top: 5px;
+
+}
+.Back-icon p {
+    color:#008170 ;
+}
+.navJ{
+    margin-top: 0px;
+ 
+}
+.filter-icon{
+    margin-left: 60%;
+}
+.pagination {
+    margin-top: 20px;
+}
+
+.page {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 5px;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.page.active {
+    background-color: darkgreen;
+    color: white;
+}
+
+.page:hover {
+    background-color: lightgreen;
+}
