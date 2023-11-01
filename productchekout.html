@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" a href="style.css">
+    <link rel="stylesheet" a href="contacts.css">
+    <title>products information</title>
+    <style>
+        .add-to-cart{
+            cursor: pointer;
+
+        }
+        .productsh:hover{
+            cursor: pointer;
+
+        }
+        
+        
+    </style>
+  
+</head>
+<body>
+    <div class="app">
+        <button class="close-button">
+            <a class="button-link" href="index.html">X</a>
+        </button> 
+        <div style="display: flex; gap: 100px;">
+            <div style="margin-left: -300px;" class="productsh">
+            
+                    <img style="height: 100px; width: 95px; margin-left: 200%; background-color: white; opacity: 0.3;" src="pictures/Rainy_jackets6.png.png" alt="">
+                    <img style="height: 100px; width: 95px; margin-left: 200%; background-color: white; opacity: 0.3;" src="pictures/Rainy_jackets6.png.png" alt="">
+                    <img style="height: 100px; width: 95px; margin-left: 200%; background-color: white; opacity: 0.3;" src="pictures/Rainy_jackets6.png.png" alt="">
+
+            </div>
+            <div>
+                <img style="height: 300px ; width:200px; margin-left: 200%;" src="pictures/Rainy_jackets6.png.png" alt="">
+            </div>
+            <div>
+
+            </div>
+            <div style="margin-left: 250px;" class="productssummery">
+                <h4>LEATHER D2 <br>- BLACK </h4>
+                <h3>$ 59</h3>
+                <p style="display: inline;">Chose size : <h3 style="display: inline;text-decoration: underline;" >L</h3> M S</p>
+                <h2 style="color: #005B41;">About the product</h2>
+                <p>
+                    Fusce efficitur tortor ac felis efficitur, quis <br> 
+                    aliquam purus consectetur. Cras tempor nisi <br>
+                    ac vehicula sagittis. Praesent posuere turpis <br>
+                    in enim pulvinar suscipit. Curabitur ut elit in <br>
+                    elit eleifend pharetra in ut dolor. Nulla cursus <br>
+                    tellus eget porttitor volutpat. Donec ac quam <br>
+                    ut nulla efficitur pellentesque ut eu odio.<br>
+                </p>
+                <button id="cart-button" class="add-to-cart" style="height: 23px;width: 300px; background-color: #005B41; color: white;">Add to cart <output></output></button>
+               
+           
+                    
+        
+
+    
+            </div>
+
+        </div>
+
+    </div>
+      <script>
+        const cartButton = document.getElementById("cart-button");
+
+       cartButton.addEventListener("click", function() {
+       cartButton.textContent = "Added to Cart";
+       cartButton.disabled = true;
+});
+
+        
+    </script>
+    
+</body>
+
+</html>

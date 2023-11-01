@@ -1,7 +1,6 @@
 
 body {
-    background-color:  white;
-    
+    background-color: #e4e1de;
     width: 70%;
     margin: auto;
     display: flex;
@@ -13,6 +12,7 @@ body {
 .app{
     width:100%;
     background-color: #e4e1de;
+    height: 1100px;
 }
 
 .nav1 li a {
@@ -108,7 +108,7 @@ ul {
 }
 
 .grid-container {
-    background-color: #2c2c2b;
+    background-color: #e4e1de;
    display:flex;
    flex-direction: row;
    height: 500px;
@@ -155,4 +155,9 @@ ul {
 }
 .Back-icon p {
     color:#008170 ;
+}
+.icon-link{
+    font-size: 24px;
+    color: white;
+    gap: 30px;
 }
