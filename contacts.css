@@ -43,6 +43,10 @@
            font-size: 40px;
            
         }
+        .close-button a {
+            color: black;
+        }
+
 
        .close-link:hover {
              cursor: pointer;
