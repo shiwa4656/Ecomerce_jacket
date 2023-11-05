@@ -5,16 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Check out</title>
     <link rel="stylesheet" a href="style.css">
+    <style>
+        .close-button{
+            margin-left: 89%;
+             margin-top: 5%; 
+             background-color: #e4e1de;
+            border: 0px; 
+            font-size: 40px;
+
+        }
+        .button-link{
+            text-decoration: none;
+             background-color: #e4e1de; 
+             color: black;
+
+        }
+        .checkoutpic{
+            margin-top: 0px;
+
+        }
+        .checkoutbutton{
+            margin-left: 30%;
+            height: 30px; 
+            width: 300px; 
+            background-color: #008170;
+            color: white;
+
+        }
+        .checkoutbutton a {
+            text-decoration: none;
+            background-color:#008170 ; 
+            color: white;
+            
+        }
+        @media all and (min-width: 501px){
+            .checkoutmobilpic{
+                display: none;
+            }
+
+        }
+
+        @media all and (max-width: 500px){
+            .checkoutpic{
+                display: none;
+            }
+            .checkoutbutton{
+            margin-left:  -13%;
+            height: 30px; 
+            width: 300px; 
+            background-color: #008170;
+            color: white;
+            margin-top: -5px;
+
+        }
+        .checkoutmobilpic{
+            margin-left: -30px;
+        }
+        .close-button{
+            margin-left: 90%;
+        }
+            
+
+        }
+
+
+    </style>
 </head>
 <body>
     <div class="app">
         <div>
-            <button style="margin-left: 89%; margin-top: 5%; background-color: #e4e1de; border: 0px; font-size: 40px;" class="close-button">
-                <a style="text-decoration: none; background-color: #e4e1de; color: black;" class="button-link" href="index.html">X</a>
+            <button class="close-button">
+                <a class="button-link" href="index.html">X</a>
               </button> 
-            <img style="margin-top: 0px;" src="pictures/checkout.png">
+            <img class="checkoutpic"  src="pictures/checkout.png">
+            <img class="checkoutmobilpic"  src="pictures/checkoutmobile.png">
+            
         </div>
-        <button style=" margin-left: 30%; height: 30px; width: 300px; background-color: #008170; color: white;"><a style="text-decoration: none; background-color:#008170 ; color: white;" href="verfied.html">CHECK OUT</a></button> 
+        <button class="checkoutbutton"><a href="verfied.html">CHECK OUT</a></button>
+
 
     </div>
     

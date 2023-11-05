@@ -15,6 +15,88 @@
             cursor: pointer;
 
         }
+        .greishImg{
+            display: flex; 
+            gap: 100px;
+
+        }
+        .productsh{
+            margin-left: -300px;
+        }
+        .differentVi{
+            height: 100px;
+            width: 95px; 
+            margin-left: 200%;
+            background-color: white; 
+            opacity: 0.3;
+
+        }
+        .mainPic{
+            height: 300px ;
+            width:200px; 
+            margin-left: 200%;
+
+        }
+        .add-to-cart{
+            height: 23px;
+            width: 300px; 
+            background-color: #005B41; 
+            color: white;
+
+        }
+        @media all and (min-width: 501px){
+            .MobileScreen{
+                display: none;
+            }
+        }
+        @media all and (max-width: 500px) {
+            .normalScreen{
+                display: none;
+            }
+            .mainPic{
+            height: 300px ;
+            width:200px; 
+            margin-left:5%;
+
+        }
+        .close-button{
+            margin-left: 70%;
+            margin-top: 2%;
+        }
+        .productsh{
+            display:flex;
+            margin-left: 20px;
+            column-gap: 2px;
+          
+            
+        }
+        .greishImg{
+          
+            margin-top: 10px;
+            margin-left: 0%;
+           
+            height: 130px;
+            width: 100%;
+
+        }
+        .differentVi{
+            height: 90px;
+            width: 60px; 
+            margin-left: 20%;
+            background-color: white; 
+            opacity: 0.3;
+
+        }
+
+
+        }
+        .productssummery{
+            margin-top: 25%;
+            margin-left: -320px;
+
+        }
+       
+
         
         
     </style>
@@ -22,48 +104,96 @@
 </head>
 <body>
     <div class="app">
-        <button class="close-button">
-            <a class="button-link" href="index.html">X</a>
-        </button> 
-        <div style="display: flex; gap: 100px;">
-            <div style="margin-left: -300px;" class="productsh">
-            
-                    <img style="height: 100px; width: 95px; margin-left: 200%; background-color: white; opacity: 0.3;" src="pictures/Rainy_jackets6.png.png" alt="">
-                    <img style="height: 100px; width: 95px; margin-left: 200%; background-color: white; opacity: 0.3;" src="pictures/Rainy_jackets6.png.png" alt="">
-                    <img style="height: 100px; width: 95px; margin-left: 200%; background-color: white; opacity: 0.3;" src="pictures/Rainy_jackets6.png.png" alt="">
-
-            </div>
-            <div>
-                <img style="height: 300px ; width:200px; margin-left: 200%;" src="pictures/Rainy_jackets6.png.png" alt="">
-            </div>
-            <div>
-
-            </div>
-            <div style="margin-left: 250px;" class="productssummery">
-                <h4>LEATHER D2 <br>- BLACK </h4>
-                <h3>$ 59</h3>
-                <p style="display: inline;">Chose size : <h3 style="display: inline;text-decoration: underline;" >L</h3> M S</p>
-                <h2 style="color: #005B41;">About the product</h2>
-                <p>
-                    Fusce efficitur tortor ac felis efficitur, quis <br> 
-                    aliquam purus consectetur. Cras tempor nisi <br>
-                    ac vehicula sagittis. Praesent posuere turpis <br>
-                    in enim pulvinar suscipit. Curabitur ut elit in <br>
-                    elit eleifend pharetra in ut dolor. Nulla cursus <br>
-                    tellus eget porttitor volutpat. Donec ac quam <br>
-                    ut nulla efficitur pellentesque ut eu odio.<br>
-                </p>
-                <button id="cart-button" class="add-to-cart" style="height: 23px;width: 300px; background-color: #005B41; color: white;">Add to cart <output></output></button>
+        <div class="normalScreen">
+            <button class="close-button">
+                <a class="button-link" href="index.html">X</a>
+            </button> 
+            <div class="greishImg">
+                <div style="margin-left: -300px;" class="productsh">
+                
+                        <img class="differentVi"  src="pictures/Rainy_jackets6.png.png" alt="Products image">
+                        <img class="differentVi" src="pictures/Rainy_jackets6.png.png" alt="Products image">
+                        <img class="differentVi" src="pictures/Rainy_jackets6.png.png" alt="Products image">
+    
+                </div>
+                <div>
+                    <img class="mainPic" src="pictures/Rainy_jackets6.png.png" alt="main picture">
+                </div>
+                <div>
+    
+                </div>
+                <div style="margin-left: 10px; margin-top: 350px;" class="productssummery">
+                    <h4>LEATHER D2 <br>- BLACK </h4>
+                    <h3>$ 59</h3>
+                    <p style="display: inline;">Chose size : <h3 style="display: inline;text-decoration: underline;" >L</h3> M S</p>
+                    <h2 style="color: #005B41;">About the product</h2>
+                    <p>
+                        Fusce efficitur tortor ac felis efficitur, quis <br> 
+                        aliquam purus consectetur. Cras tempor nisi <br>
+                        ac vehicula sagittis. Praesent posuere turpis <br>
+                        in enim pulvinar suscipit. Curabitur ut elit in <br>
+                        elit eleifend pharetra in ut dolor. Nulla cursus <br>
+                        tellus eget porttitor volutpat. Donec ac quam <br>
+                        ut nulla efficitur pellentesque ut eu odio.<br>
+                    </p>
+                    <button id="cart-button" class="add-to-cart" >Add to cart <output></output></button>
+                   
                
-           
-                    
+                        
+            
+    
         
-
+                </div>
     
             </div>
 
         </div>
+        <div class="MobileScreen">
+            <button class="close-button">
+                <a class="button-link" href="index.html">X</a>
+            </button>
+            <div>
+                <img class="mainPic" src="pictures/Rainy_jackets6.png.png" alt="main picture">
+            </div> 
+            <div class="greishImg" >
+                <div class="productsh">
+                
+                        <img class="differentVi"  src="pictures/Rainy_jackets6.png.png" alt="ProductsImage">
+                        <img class="differentVi" src="pictures/Rainy_jackets6.png.png" alt="ProductsImage">
+                        <img class="differentVi" src="pictures/Rainy_jackets6.png.png" alt="ProductsImage">
+    
+                </div>
+               
+                <div>
+    
+                </div>
+                <div  class="productssummery">
+                    
+                    <p style="display: inline;">Chose size :<br> <h3 style="display: inline;text-decoration: underline;" >L</h3> M S</p>
+                    <button id="cart-button" class="add-to-cart" >Add to cart <output></output></button>
+                    <h2 style="color: #005B41;">About the product</h2>
+                    <p>
+                        Fusce efficitur tortor ac felis efficitur, quis <br> 
+                        aliquam purus consectetur. Cras tempor nisi <br>
+                        ac vehicula sagittis. Praesent posuere turpis <br>
+                        in enim pulvinar suscipit. Curabitur ut elit in <br>
+                        elit eleifend pharetra in ut dolor. Nulla cursus <br>
+                        tellus eget porttitor volutpat. Donec ac quam <br>
+                        ut nulla efficitur pellentesque ut eu odio.<br>
+                    </p>
+              
+                   
+               
+                        
+            
+    
+        
+                </div>
+    
+            </div>
 
+        </div>
+     
     </div>
       <script>
         const cartButton = document.getElementById("cart-button");

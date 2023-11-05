@@ -12,25 +12,116 @@
 
 
         }
+        .verified{
+            border-color: black;
+            border-style: solid; 
+            width: 700px; 
+            background-color: #e4e1de;
+            border-width: 1px; 
+            margin-top: 15%;
+            align-content: center; 
+            padding: 30px; 
+            padding-left: 10px; 
+            margin-left: 100px;
+
+        }
+        .close-button{
+            margin-left: 90%;
+            background-color: #e4e1de;
+            border: 0px; 
+            font-size: 40px;
+
+        }
+        .button-link{
+            text-decoration: none;
+            background-color: #e4e1de;  
+        }
+        .verifiedPicAndPr{
+            display: flex; 
+            align-items: center; 
+            margin-left: 180px;
+
+        }
+        .verifedPic{
+            width: 100px;
+            height: 110px;
+
+        }
+        .verifiedPicAndPr h2{
+            color: green;
+
+        }
+        .confirmationCode{
+            margin-left: 180px; 
+            font-size: medium;
+            
+        }
+        .para{
+            margin-left: 30px;
+        }
+        .continuBtn{
+            margin-left: 180px;
+
+        }
+        .continuesh{
+            height: 30px; 
+            width: 190px;
+            background-color: #232D3F; 
+            color: white;
+
+        }
+        .continuesh a {
+            text-decoration: none; 
+            color: white;
+
+        }
+        @media all and (max-width: 500px){
+            .verified{
+            border-color: black;
+            border-style: solid; 
+            width: 400px; 
+            background-color: #e4e1de;
+            border-width: 1px; 
+            margin-top: 15%;
+            align-content: center; 
+            padding: 10px; 
+            padding-left: 10px; 
+            margin-left: -40px;
+
+            }
+            .verifiedPicAndPr{
+                display: flex;
+                flex-direction: column;
+                margin-left: -30%;
+            }
+            .confirmationCode{
+                margin-left: 5%;
+            }
+            .continuBtn {
+                margin-left: 5%;
+            }
+
+        }
+
     </style>
     
 </head>
 <body>
     <div class="app">
-        <div class="verified" style="border-color: black; border-style: solid;  width: 700px; background-color: #e4e1de; border-width: 1px; margin-top: 15%;align-content: center; padding: 30px; padding-left: 10px; margin-left: 100px;">
-            <button style="margin-left: 90%; background-color: #e4e1de; border: 0px; font-size: 40px;" class="close-button">
-                <a style="text-decoration: none; background-color: #e4e1de;" class="button-link" href="index.html">X</a>
+        <div class="verified">
+            <button  class="close-button">
+                <a class="button-link" href="index.html">X</a>
               </button> 
-            <div style="display: flex; align-items: center; margin-left: 180px;">
-                <img style="width: 100px; height: 110px;" src="pictures/Eo_circle_green_checkmark.svg.png">
-                <h2 style="color: green;">Thanks for your purchase</h2>
+            <div class="verifiedPicAndPr">
+                <img class="verifedPic" src="pictures/Eo_circle_green_checkmark.svg.png">
+                <h2>Thanks for your purchase</h2>
             </div>
-            <div style="margin-left: 180px; font-size: medium;">
-                <p style="margin-left: 30px;">order number : <b> Gy26jgd</b></p>
+            <div class="confirmationCode">
+                <p class="para">order number : <b> Gy26jgd</b></p>
                 <p>You will receive <b>an email</b> with order <br> receipt and <b>shipping</b> information</p>
             </div>
-            <div style="margin-left: 180px;">
-                <button class="continuesh" style="height: 30px; width: 190px; background-color: #232D3F; color: white;"> <a style="text-decoration: none; color: white;" href="jackets.html" >Continue shiping</a></button>
+            <div class="continuBtn">
+                <button class="continuesh"> <a  href="jackets.html" >Continue shiping</a></button>
             </div>
             
         </div>

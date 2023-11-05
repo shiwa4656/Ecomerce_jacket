@@ -15,6 +15,7 @@ body {
     height: 1100px;
 }
 
+
 .nav1 li a {
     text-decoration: none;
     color: black;
@@ -23,6 +24,9 @@ body {
     list-style-type: none;
     margin-left: 20px;
 
+}
+.main{
+    display: flex;
 }
 .nav1 {
     display: flex;
@@ -43,6 +47,9 @@ ul {
     display: flex;
     justify-content: space-between;
 }
+
+
+
 .logo{
     width: 80px;
    height: 25px;
@@ -161,3 +168,136 @@ ul {
     color: white;
     gap: 30px;
 }
+
+@media all and (min-width: 501px) {
+    #menu-checkbox, .fas.fa-bars {
+        display: none;
+    }
+    .logo_phone{
+        display: none;
+    }
+    .logo-image-phone{
+        display: none;
+    }
+    .cart-phone {
+        display: none;
+    }
+}
+@media all and (max-width: 500px) {
+    body{
+        height: 1300px;
+        margin-top: 0px;
+        
+    }
+    
+    .header{
+        margin-top: 0%;
+    }
+    .app{
+        margin-top: 0%;
+        height: 1100px;
+        
+    }
+    .navheader{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 4%;
+      
+    }
+    #IconCheck i.fas.fa-bars{
+       margin-top: 40%;
+       font-size: 30px;
+    }
+        
+    .nav1{
+        display: flex;
+    }
+    .nav1 li{
+        gap: 8px;
+
+    }
+    .cart-phone{
+       margin-top: 4%;
+       position: relative;
+      
+    }
+    .nav2{
+        display: block;
+    }
+    .cart{
+        display: none;
+    }
+    #main {
+        display: none;
+    }
+    .Last_section {
+        display: none;
+    }
+    #IconCheck {
+        margin-right: 20px;
+        display: block;
+    }
+    .nav1{
+        margin-left: -105px;
+        
+    }
+    .nav1 li {
+        margin-top: 15px;
+    }
+
+    .nav1, #menu-checkbox{
+        display: none;
+       
+    }
+    #menu-checkbox:checked ~ .nav1 {
+        display: block;
+        gap: 2px;
+        position: absolute;
+        margin-right: 100px;
+        margin-top: 30px;
+     
+       
+    }
+    .nav {
+        flex-direction: column;
+
+    }
+    .slogan {
+        font-size: 40px;
+        margin-top:  32%;
+       
+        
+    }
+    
+    
+   .logo{
+      
+       display: none;
+    }
+   .logo-image{
+      display: none;
+    }
+    #image-container {
+       width: 200px;
+       height: 300px;
+       overflow: hidden;
+       background-color: #e4e1de;
+       margin-top: 20%;
+       margin-left: 35%;
+    
+ 
+    }
+    .logo_phone{
+        width: 40px;
+        height: 12px;
+        margin-top: 0px;
+
+    }
+    .logo-image-phone{
+        width: 100px;
+        height: 45px;
+
+    }
+}
+
+
