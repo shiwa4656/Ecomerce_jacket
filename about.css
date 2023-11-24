@@ -1,0 +1,56 @@
+body{
+    background-color: #DEE4E3;
+}
+.nav1{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7%;
+    text-decoration: none;
+    list-style: none;
+}
+
+ 
+ 
+ .nav1 li a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin-left: 20px;
+    list-style: none;
+
+}
+.heading{
+    text-align: center;
+    display: flex;
+
+}
+
+
+.title {
+    margin-top: 8%;
+    margin-left: 40%;
+    text-decoration: underline;
+    font-size: 70px;
+
+}
+.paragraf{
+    text-align: center;
+}
+@media all and (max-width: 500px){
+    .heading{
+        display: flex;
+    }
+    .title{
+        font-size:large;
+        margin-top: 30%;
+        text-decoration: none;
+        color: #008170;
+    }
+  
+    .paragraf{
+        font-size: small;
+    }
+   
+}

@@ -3,44 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Home" content="This is the home page">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     
     <title>Rainy firm</title>
 </head>
 <body>
-    <div class="app">
+    <div class="app"> 
         <header class="header">
 
             <div class="Nav1">
                 <div class="navheader">
-                    <logo class="logo_phone"><img class="logo-image-phone" src="pictures/RainyDays_Logo.png" alt="Logo image phone"></logo>
-                <li> <a href="checkout.html"><img class="cart-phone" src="pictures/real cart.png"></a></li>
+                    <logo class="logo_phone" ><img class="logo-image-phone" src="pictures/RainyDays_Logo.png" alt="this is the logo-image-phone for the small screen users"></logo>
+                    <li>
+                        <a href="checkout.html">
+                            <img class="cart-phone" src="pictures/real cart.png" alt="this is the logo-image for the big screen users">
+                        </a>
+                    </li>
+              
                 <nav class="nav">
-                    <logo class="logo"><img class="logo-image" src="pictures/RainyDays_Logo.png" alt="logo image normal screen"></logo>
-                    <input type="checkbox" id="menu-checkbox" /> 
-                    <label id="IconCheck" for="menu-checkbox"> <i class="fas fa-bars"></i>
+                    <logo class="logo"><img class="logo-image" src="pictures/RainyDays_Logo.png" alt="this is the logo-image for the big screen users"></logo>
+                    <input type="checkbox" id="menu-checkbox"/> 
+                    <label id="IconCheck" for="menu-checkbox"  aria-label="Open Menu"> <i class="fas fa-bars"></i>
+                       
                     </label>                
                     <ul class="nav1">
-                        <li><a href="Home.html">Home</a></li>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="jackets.html">Jackets</a></li>
                         <li><a href="About.html">About</a></li>
                         <li><a href="contacts.html">Contacts</a></li>
-                        <li> <a href="checkout.html"><img style="margin-top: -32%;" class="cart" src="pictures/real cart.png"></a></li>
+                        <li> <a href="checkout.html"><img class="cart" src="pictures/real cart.png" alt="this is the cart image for the homepage of the navigation"></a></li>
                     </ul>
                 </nav>
+
 
                 </div>                               
                 
                
                 <div class="nav2">
                     <div class="slogan-btn">
-                        <p class="slogan">Pushing the <br> <b>comfort zone </b></p>
-                        <button class="shop-btn"> <p style="font-weight: bolder;" class="shop-pg"> <a style="text-decoration: none; color: white; font-size: bold;" href="./jackets.html">SHOP NOW</a></p></button>
+                        <div class="sloganpara">
+                            <h1 class="slogan">Pushing the</h1>
+                            <h1 class="slogan"><b>comfort zone </b></h1>
+                        </div>
+                        
+
+                        <button class="shop-btn"> <p class="shop-pg"> <a href="./jackets.html">SHOP NOW</a></p></button>
 
                     </div>
                 
-                   <img id="image-container" class="view1" src="pictures/Rainy_jackets6.png.png" alt="burner image">                
+                   <img id="image-container" class="view1" src="pictures/Rainy_jackets6.png.png" alt=" this is the  burner-image for the webpage">                
 
                 </div>
                 
@@ -48,37 +61,37 @@
            
         </header>
         <main id="main">
-            <div style="height: 0.5px; width: 100%; background-color: black; margin-bottom: 10px; margin-top: 130px;" class="line"></div>
-        <p style="margin-left: 40%; color: rgba(0, 129, 112, 1); margin-top: 50px;">***POPULAR NOW***</p>
+            <div class="line"></div>
+        <p class="popular_now">***POPULAR NOW***</p>
         <div class="grid-container">
             <div class="grid-item">
                 <div class="products">
                     <div>
-                        <img class="icon-Products" src="./pictures/icon-plus.png" alt="icon cart">
+                        <img class="icon-Products" src="./pictures/icon-plus.png" alt="this is the icon's picture of the products">
                     </div>
-                    <img class="products-img" src="./pictures/RainyDays_Jacket1.png" alt="Wassive- Multi-colour jacket">
+                    <img class="products-img" src="./pictures/RainyDays_Jacket1.png" alt="this is Wassive-Multi-colour jacket one of the jackets">
                     <p class="product-paragraph">Wassive- Multi-colour</p>
-                    <h5 class="price-tag">$99</h5>
+                    <h2 class="price-tag">$99</h2>
                 </div>
             </div>
             <div class="grid-item">
                 <div class="products">
                     <div>
-                        <img class="icon-Products" src="./pictures/icon-plus.png" alt="icon">
+                        <img class="icon-Products" src="./pictures/icon-plus.png" alt="this is the icon's picture of the products">
                     </div>
-                    <img class="products-img" src="./pictures/RainyDays_Jacket5.png" alt="Quando -Grey jacket">
-                    <p class="product-paragraph">Quando -Grey</p>
-                    <h5 class="price-tag">$69</h5>
+                    <img class="products-img" src="./pictures/RainyDays_Jacket5.png" alt=" this is Quando-Grey jacket one of the jackets">
+                    <p class="product-paragraph">Quando-Grey</p>
+                    <h2 class="price-tag">$69</h2>
                 </div>
             </div>
             <div class="grid-item">
                 <div class="products">
                     <div>
-                        <img class="icon-Products" src="./pictures/icon-plus.png" alt="icon">
+                        <img class="icon-Products" src="./pictures/icon-plus.png" alt="this is the icon's picture of the products">
                     </div>
-                    <img class="products-img" src="./pictures/RainyDays_Jacket7.png" alt="Ull Jakke -Greenish jacket">
+                    <img class="products-img" src="./pictures/RainyDays_Jacket7.png" alt="this is Ull Jakke-Greenish jacket one of the jackets">
                     <p class="product-paragraph">Ull Jakke -Greenish</p>
-                    <h5 class="price-tag">$39</h5>
+                    <h2 class="price-tag">$39</h2>
                 </div>
             </div>
 
@@ -88,32 +101,31 @@
 
         </main>
         <div class="Last_section">
-            <footer class="footer" style="color: white; display: flex; align-items: center; height: 180px; width: 100%; background-color: #3b414b; padding: 0 20px; color: whites; margin-top: 140px;">
-                <div style="display: flex; align-items: center;">
+            <footer class="footer">
+                <div class="footer_container">
                     <div>
-                        <img class="logo-image" src="pictures/RainyDays_Logo.png" alt="Logo">
+                        <img class="logo-image" src="pictures/RainyDays_Logo.png" alt="this is the comppany's Logo at the footer">
                     </div>
-                    <div class="pagelinks" style="display: flex; flex-direction: column; margin-left: 180px; gap: 10px; color: white;">
-                        <a href="./index.html" style="margin-right: 20px; color: white;">Home</a>
-                        <a href="./about.html" style="color: white; margin-right: 20px;">About</a>
-                        <a style="color: white;" href="./jackets.html">Shop now</a>
+                    <div class="pagelinks">
+                        <a class="pageLinkSelf" href="./index.html" >Home</a>
+                        <a  class="pageLinkSelf" href="./about.html">About</a>
+                        <a  class="pageLinkSelf" href="./jackets.html">Shop now</a>
                     </div>
-                    <div class="pagelinks" style="display: flex; flex-direction: column; margin-left: 190px; gap:-40px
-                    ; margin-top: auto; margin-right: 20px;">
-                        <p style="gap: -2px;">Privacy and policies</p>
-                        <p style="gap: -2px;">FAQ</p>
-                        <p style="gap: -2px;">Shipping</p>
-                        <p style="gap: -2px;">©2023</p>
+                    <div class="pagelinks2">
+                        <p >Privacy and policies</p>
+                        <p>FAQ</p>
+                        <p >Shipping</p>
+                        <p >©2023</p>
                        
                     </div>
                 
-                    <div class="social-icons" style="margin-left: 100px;">
-                        <p style="display: block; margin-top: 15px;">
+                    <div class="social-icons">
+                        <p>
                             <a href="contacts.html" style="color: white;">Contact us</a>
                         </p>
-                        <a href="https://www.facebook.com" class="icon-link"><i class="fab fa-facebook"></i></a>
-                        <a href="https://www.instagram.com" class="icon-link"><i class="fab fa-instagram"></i></a>
-                        <a href="https://twitter.com" class="icon-link"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.facebook.com" class="icon-link" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com" class="icon-link"aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com" class="icon-link" aria-label="twitter"><i class="fab fa-twitter"></i></a>
                     </div>
                     
             

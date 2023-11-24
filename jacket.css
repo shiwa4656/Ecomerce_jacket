@@ -49,15 +49,14 @@ body {
     display: flex;
     margin-bottom: 40px;
     margin-top: 5px;
-
+}
+.homeback {
+    text-decoration: none;
 }
 .Back-icon p {
-    color:#008170 ;
+    color:#006951 ;
 }
-.navJ{
-    margin-top: 0px;
- 
-}
+
 .filter-icon{
     margin-left: 60%;
 }
@@ -65,6 +64,10 @@ body {
     margin-top: 20px;
     margin-left: 120%; 
     display: flex;
+    
+}
+#jacket2pagina{
+    margin-left: 88px;
 }
 
 .page {

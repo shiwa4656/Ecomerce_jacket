@@ -3,88 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Check out</title>
-    <link rel="stylesheet" a href="style.css">
-    <style>
-        .close-button{
-            margin-left: 89%;
-             margin-top: 5%; 
-             background-color: #e4e1de;
-            border: 0px; 
-            font-size: 40px;
-
-        }
-        .button-link{
-            text-decoration: none;
-             background-color: #e4e1de; 
-             color: black;
-
-        }
-        .checkoutpic{
-            margin-top: 0px;
-
-        }
-        .checkoutbutton{
-            margin-left: 30%;
-            height: 30px; 
-            width: 300px; 
-            background-color: #008170;
-            color: white;
-
-        }
-        .checkoutbutton a {
-            text-decoration: none;
-            background-color:#008170 ; 
-            color: white;
-            
-        }
-        @media all and (min-width: 501px){
-            .checkoutmobilpic{
-                display: none;
-            }
-
-        }
-
-        @media all and (max-width: 500px){
-            .checkoutpic{
-                display: none;
-            }
-            .checkoutbutton{
-            margin-left:  -13%;
-            height: 30px; 
-            width: 300px; 
-            background-color: #008170;
-            color: white;
-            margin-top: -5px;
-
-        }
-        .checkoutmobilpic{
-            margin-left: -30px;
-        }
-        .close-button{
-            margin-left: 90%;
-        }
-            
-
-        }
-
-
-    </style>
+    <meta name="checkout" content="This is the checkout page for product purchases">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="app">
+        <header>
+            
+            <ul class="nav1">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="jackets.html">Jackets</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+            </ul>
+        </header>
+
         <div>
             <button class="close-button">
                 <a class="button-link" href="index.html">X</a>
-              </button> 
-            <img class="checkoutpic"  src="pictures/checkout.png">
-            <img class="checkoutmobilpic"  src="pictures/checkoutmobile.png">
-            
+            </button> 
+            <img class="checkoutpic" src="pictures/checkout.png" alt="the checkout picture for large screen users">
+            <img class="checkoutmobilpic" src="pictures/checkoutmobile.png" alt="the checkout page for small screen users">
         </div>
-        <button class="checkoutbutton"><a href="verfied.html">CHECK OUT</a></button>
 
-
+        <button class="checkoutbutton"><a href="verfied.html"> CHECK OUT</a></button>
     </div>
-    
 </body>
 </html>
