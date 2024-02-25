@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Jackets" content="This is the product page for the jackets">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./jacket.css">
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Jackets" content="This is the product page for the jackets">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="./jacket.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
             const pages = document.querySelectorAll(".page");
     
             pages.forEach((page) => {
@@ -38,108 +39,71 @@
                         </a>
 
                     </div>
+                    <div class="shopping-cart-label">0</div>
                     <ul class="nav1">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="jackets.html">Jackets</a></li>
                         <li><a href="About.html">About</a></li>
                         <li><a href="contacts.html">Contacts</a></li>
-                        <li> <a href="checkout.html"><img class="cart" src="pictures/real cart.png" alt="this is the picture for the car in the home page"></a></li>
+                        <li> <a href="checkout.html"><img class="cart shopping-cart" src="pictures/real cart.png" alt="this is the picture for the car in the home page"></a></li>
                     </ul>
 
-                    <img class="filter-icon" src="pictures/searchicon.png" alt="filter icon">
+                    <!-- <img class="filter-icon" src="pictures/searchicon.png" alt="filter icon"> -->
+                    <!-- filter -->
+                    <div class="filter">
+                       
+                        <div class="filter-options">
+                            <label for="filter">Filter by:</label>
+                           <select name="filter" id="filter">
+                               <option value="color">Color</option>
+                               <option value="price">Price</option>
+                           </select>
+
+                        </div>
+                       
+
+                    </div>  
+
                  
                 </div>
             </nav>
             <div class="grid-container">
-                <div class="grid-item">
-                    <div class="products">
-                        <div>
-                            <img class="icon-Products" src="./pictures/icon-plus.png" alt="icon">
-                        </div>
-                        <a href="productchekout.html"><img class="products-img" src="./pictures/jpeg-optimizer_Rainy_jackets6.png.png" alt="Leather Jacket"></a>                       
-                        <p class="product-paragraph">Leather Jacket</p>
-                        <h1 class="price-tag">$50</h1>
-                    </div>
-                </div>
-                <div class="grid-item">
-                    <div class="products">
-                        <div>
-                            <img class="icon-Products" src="./pictures/icon-plus.png" alt="icon">
-                        </div>
-                        <img class="products-img" src="./pictures/jpeg-optimizer_RainyDays_Jacket7.png" alt="Ull Jakke -Greenish jacket">
-                        <p class="product-paragraph">Ull Jakke -Greenish</p>
-                        <h1 class="price-tag">$39</h1>
-                    </div>
-                </div>
-                <div class="grid-item">
-                    <div class="products">
-                        <div>
-                            <img class="icon-Products" src="./pictures/icon-plus.png" alt="icon">
-                        </div>
-                        <img class="products-img" src="./pictures/jpeg-optimizer_RainyDays_Jacket5.png" alt="Quando -Grey jacket">
-                        <p class="product-paragraph">Quando -Grey</p>
-                        <h1 class="price-tag">$69</h1>
-                    </div>
-                </div>
-                <div class="grid-item">
-                    <div class="products">
-                        <div>
-                            <img class="icon-Products" src="./pictures/icon-plus.png" alt="icon">
-                        </div>
-                        <img class="products-img" src="./pictures/jpeg-optimizer_RainyDays_Jacket1.png" alt="Wassive- Multi-colour jacket">
-                        <p class="product-paragraph">Wassive- Multi-colour</p>
-                        <h1 class="price-tag">$99</h1>
-                    </div>
-                </div>
-                <div class="grid-item">
-                    <div class="products">
-                        <div>
-                            <img class="icon-Products" src="./pictures/icon-plus.png" alt="icon">
-                        </div>
-                        <img class="products-img" src="./pictures/jpeg-optimizer_RainyDays_Jacket3.png" alt="Scooty - Multi-colour jacket">
-                        <p class="product-paragraph">Scooty - Multi-colour</p>
-                        <h1 class="price-tag">$49</h1>
-                    </div>
-                </div>
-                <div class="grid-item">
-                    <div class="products">
-                        <div>
-                            <img class="icon-Products" src="./pictures/icon-plus.png" alt="icon">
-                        </div>
-                        <img class="products-img" src="./pictures/jpeg-optimizer_RainyDays_Jacket4.png" alt="Goofial- Multi-color jacket">
-                        <p class="product-paragraph">Goofial- Multi-color</p>
-                        <h1 class="price-tag">$77</h1>
-                    </div>
-                </div>
-                <div>
-                    <div class="pagination">
-                        <a href="#" class="page active" data-page="1">1</a>
-                        <a href="jackets2.html" class="page" data-page="2">2</a>
-                    
-                    </div>
-                                  
-
-                </div>
-           
-               
                 
-           
-               
+
+                
             </div>
-          
+            
                                   
         </div>
         <div>
             
-    
-
+            
+            
         </div>
         
-
-      
         
-       
+        
+        
+        
     </div>
     
+
+    
+    
+    <script src="index.js" type="module" ></script>
+
+    <script>
+            const label = document.querySelector(".shopping-cart-label");
+
+// fetch the shoppingcart items from the local storage
+const shoppingCart = JSON.parse(localStorage.getItem("shoppingCart")) || [];
+// label number accounts for quantity of items in the shopping cart
+let labelNumber = 0;
+shoppingCart.forEach((item) => {
+    labelNumber += item.quantity;
+});
+label.textContent = labelNumber;
+
+    </script>
 </body>
 </html>

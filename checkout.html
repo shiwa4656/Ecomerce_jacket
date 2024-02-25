@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="checkout" content="This is the checkout page for product purchases">
-    <title>Checkout</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="app">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="checkout" content="This is the checkout page for product purchases">
+        <title>Checkout</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    </head>
+    <body>
+        <div class="app">
         <header>
             
             <ul class="nav1">
@@ -18,16 +19,37 @@
                 <li><a href="contacts.html">Contacts</a></li>
             </ul>
         </header>
-
+        
         <div>
             <button class="close-button">
                 <a class="button-link" href="index.html">X</a>
             </button> 
-            <img class="checkoutpic" src="pictures/checkout.png" alt="the checkout picture for large screen users">
-            <img class="checkoutmobilpic" src="pictures/checkoutmobile.png" alt="the checkout page for small screen users">
+            <!-- <img class="checkoutpic" src="pictures/checkout.png" alt="the checkout picture for large screen users">
+                <img class="checkoutmobilpic" src="pictures/checkoutmobile.png" alt="the checkout page for small screen users"> -->
+
+                <table class="table-shopping-cart">
+                <tr>
+                    <th>Product</th>
+                  <th>Quantity</th>
+                  <th>Total Price</th>
+                </tr>
+                <!-- <tr>
+                    <td> <img src="./pictures/jpeg-optimizer_Rainy_jackets6.png.png" alt="">LEATHER D2 - BLACK</td>
+                    <td> <span class="increase-product">-</span> 3 <span class="decrease-product">+</span></td>
+                    <td>$59</td>
+                </tr> -->
+                
+                <!-- total price row span all columns -->
+            </table>
+            
+
         </div>
 
         <button class="checkoutbutton"><a href="verfied.html"> CHECK OUT</a></button>
     </div>
+
+
+ 
+    <script src="checkout.js"></script>
 </body>
 </html>

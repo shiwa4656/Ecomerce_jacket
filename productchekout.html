@@ -12,37 +12,31 @@
     <div class="app">
         <div class="normalScreen">
             <button class="close-button">
-                <a class="button-link" href="index.html">X</a>
+                <a class="button-link" href="jackets.html">X</a>
             </button> 
             <div class="greishImg">
                 <div class="productsh">
                 
-                        <img class="differentVi"  src="pictures/Rainy_jackets6.png.png" alt="this Products image summery pictures">
-                        <img class="differentVi" src="pictures/Rainy_jackets6.png.png" alt="this Products image summery pictures">
-                        <img class="differentVi" src="pictures/Rainy_jackets6.png.png" alt="this Products image summery pictures">
+                        <img class="differentVi"  src="" alt="this Products image summery pictures">
+                        <img class="differentVi" src="" alt="this Products image summery pictures">
+                        <img class="differentVi" src="" alt="this Products image summery pictures">
     
                 </div>
                 <div>
-                    <img class="mainPic" src="pictures/Rainy_jackets6.png.png" alt="main picture">
+                    <img class="mainPic" src="" alt="main picture">
                 </div>
                 <div>
     
                 </div>
                 <div style="margin-left: 10px; margin-top: 350px;" class="productssummery">
-                    <h4>LEATHER D2 <br>- BLACK </h4>
-                    <h3>$ 59</h3>
-                    <p style="display: inline;">Chose size : <h3 style="display: inline;text-decoration: underline;" >L</h3> M S</p>
+                    <h4 class="name-product-details"></h4>
+                    <h3 class="price-product-details"></h3>
+                    <p class="size-product-details" style="display: inline;">Chose size : <h3 style="display: inline;text-decoration: underline;" >L</h3> M S</p>
                     <h2 style="color: #005B41;">About the product</h2>
-                    <p>
-                        Fusce efficitur tortor ac felis efficitur, quis <br> 
-                        aliquam purus consectetur. Cras tempor nisi <br>
-                        ac vehicula sagittis. Praesent posuere turpis <br>
-                        in enim pulvinar suscipit. Curabitur ut elit in <br>
-                        elit eleifend pharetra in ut dolor. Nulla cursus <br>
-                        tellus eget porttitor volutpat. Donec ac quam <br>
-                        ut nulla efficitur pellentesque ut eu odio.<br>
+                    <p class="description-text">
+                       
                     </p>
-                    <button id="cart-button" class="add-to-cart" >Add to cart <output></output></button>
+                    <button id="cart-button" class="add-to-cart add-to-cart-details" >Add to cart <output></output></button>
                    
                
                         
@@ -78,7 +72,7 @@
                     <p style="display: inline;">Chose size :<br> <h3 style="display: inline;text-decoration: underline;" >L</h3> M S</p>
                     <button id="cart-button" class="add-to-cart" >Add to cart <output></output></button>
                     <h2 style="color: #005B41;">About the product</h2>
-                    <p>
+                    <p class="description-text">
                         Fusce efficitur tortor ac felis efficitur, quis <br> 
                         aliquam purus consectetur. Cras tempor nisi <br>
                         ac vehicula sagittis. Praesent posuere turpis <br>
@@ -108,6 +102,67 @@
        cartButton.textContent = "Added to Cart";
        cartButton.disabled = true;
 });
+
+
+const image = document.querySelector(".mainPic");
+const images = document.querySelectorAll(".differentVi");
+const description = document.querySelector(".description-text");
+const name = document.querySelector(".name-product-details");
+const price = document.querySelector(".price-product-details");
+const size = document.querySelector(".size-product-details");
+const addToCart = document.querySelector(".add-to-cart-details");
+
+let product = {};
+
+addToCart.addEventListener("click", function() {
+    addToCart.textContent = "Added to Cart";
+    addToCart.disabled = true;
+    const shoppingCart = JSON.parse(localStorage.getItem("shoppingCart")) || [];
+    // check with id if the product is already in the shopping cart
+    const exists = shoppingCart.find((item) => item.id === product.id);
+    if (exists) {
+        exists.quantity += 1;
+        localStorage.setItem("shoppingCart", JSON.stringify(shoppingCart));
+        return;
+    }
+    product.quantity =1;
+    console.log(shoppingCart);
+    console.log(product);
+    // product.quantity?product.quantity+=1:product.quantity=1;
+    shoppingCart.push(product);
+
+
+    localStorage.setItem("shoppingCart", JSON.stringify(shoppingCart));
+});
+
+
+    // fecth productIID from local storage
+    const productID = localStorage.getItem("productID");
+
+    // fetch the product from this urlhttps://v2.api.noroff.dev/rainy-days/07a7655a-7927-421b-ba6a-b6742d5a75b8, use awai async
+
+    async function fetchProduct() {
+        try {
+            const response = await fetch("https://v2.api.noroff.dev/rainy-days/" + productID);
+            product = await response.json();
+            console.log(product);
+            product=product.data;
+            image.src = product.image.url;
+            images.forEach((img, index) => {
+                img.src = product.image.url;
+            });
+            description.textContent = product.description;
+            name.textContent = product.title;
+            price.textContent = `$${product.price}`;
+            size.textContent = `Chose size : ${product.sizes}`;
+        } catch (error) {
+            console.log(error);
+        }
+    }
+
+
+
+    fetchProduct()
 
         
     </script>
